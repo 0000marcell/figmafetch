@@ -1,0 +1,20 @@
+{
+  "name": "figmafetch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "figmafetch.js",
+  "bin": "figmafetch.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "node-fetch": "^2.5.0"
+  }
+}
