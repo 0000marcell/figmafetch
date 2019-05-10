@@ -2,4 +2,4 @@
 
 ID=$(cat ./figmaconfig | head -1)
 TOKEN=$(cat ./figmaconfig | tail -1)
-./figmafetch.js -u 'https://api.figma.com' -i $ID -t $TOKEN 
+./figmafetch.js -i $ID -t $TOKEN 
