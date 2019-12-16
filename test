@@ -1,5 +1,0 @@
-#!/usr/bin/bash
-
-ID=$(cat ./figmaconfig | head -1)
-TOKEN=$(cat ./figmaconfig | tail -1)
-./figmafetch.js -i $ID -t $TOKEN 
