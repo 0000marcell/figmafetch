@@ -2,6 +2,7 @@
 
 const fetch = require('node-fetch');
 const headers = new fetch.Headers();
+const pkg = require('./package.json')
 const program = require('commander');
 const fs = require('fs');
 
@@ -14,6 +15,8 @@ async function fetchProject(projectId, token) {
   let data = await resp.json();
   return data;
 }
+
+program.version(pkg.version)
 
 program
   .description('fetch figma project')
@@ -29,5 +32,6 @@ program
     data['headers'] = { token: token, id: id };
     console.log(JSON.stringify(data));
   });
+
 
 program.parse(process.argv);
